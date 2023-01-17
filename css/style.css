@@ -132,6 +132,7 @@ main .section .pic img {
 
 button {
   background-color: var(--gray);
+  border: none;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: 1px;
