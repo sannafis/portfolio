@@ -268,7 +268,7 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.accordion:hover {
+.active, .accordion:hover {
   color: var(--blue);
 }
 
@@ -278,6 +278,16 @@
   color: white;
   display: none;
   overflow: hidden;
+}
+
+.panel ul {
+  color: white;
+  list-style-type: square;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:none;
 }
 
 /* 100% Image Width on Smaller Screens */
