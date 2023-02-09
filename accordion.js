@@ -1,6 +1,3 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
-
 function accordionShow(accord){
     accord.classList.toggle("active");
     var panel = accord.nextElementSibling;
