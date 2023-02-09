@@ -18,6 +18,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="modal.js"></script>
+    <script src="accordion.js"></script>
 
 </head>
 
@@ -58,7 +59,7 @@
     <div class="tabs">
         <div class="skip"><a href="#sect1">Design</a></div>
         <div class="skip"><a href="#sect2">Data Model</a></div>
-
+        <div class="skip"><a href="#sect3">Progress</a></div>
     </div>
 
     <main>
@@ -69,7 +70,7 @@
             &#x1F855;</span></button></a>
 
         <div class="section main-sect about">
-            <h1 id="sect1">Design</h1>
+            <h2 id="sect1">Design</h2>
             <hr />
             <div class="content">
 
@@ -101,7 +102,7 @@
         </div>
 
         <div class="section main-sect about">
-            <h1 id="sect2">Data Model</h1>
+            <h2 id="sect2">Data Model</h2>
             <hr />
             <div class="content">
 
@@ -118,6 +119,44 @@
             <a onclick="window.open('images/teashop/DataModel.png', '_blank')">View image in new tab &#x1F855;</a>
             <br /><br /><img id="datamodel" style="width:85%;" onclick="modalpopup(id, src, alt)"
                 alt="Data Model version 1" src="images/teashop/DataModel.png" />
+
+        </div>
+
+        <div class="section main-sect about">
+            <h2 id="sect3">Progress</h2>
+            <hr />
+            <div class="content">
+
+                <div class="writing">
+                    <div class="info">
+                        My ultimate goal for this application is to make it as customizable to each individual user as possible.
+                        I will be documenting my progress and ideas below.
+                    </div>
+                </div>
+
+
+            </div>
+            <span class="accordion"><h3>Finished (0):</h2></span>
+            <div class="panel">
+            </div>
+            
+            <span onclick="accordionShow(this)" class="accordion"><h3>Currently Working On (1):</h2></span>
+            <div class="panel">
+                <ul>
+                    <li>Products (Index, CRUD)</li>
+                </ul>
+            </div>
+            
+            <span onclick="accordionShow(this)" class="accordion"><h3>To-Do (5):</h2></span>
+            <div class="panel">
+                <ul>
+                    <li>Ordering System (Index, CRUD)</li>
+                    <li>Menu (Index, CRUD)</li>
+                    <li>POS System (Index, CRUD)</li>
+                    <li>Suppliers (Index, CRUD)</li>
+                    <li>User Login Functionality</li>
+                </ul>
+            </div> 
 
         </div>
 
