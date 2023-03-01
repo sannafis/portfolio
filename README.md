@@ -1,2 +1,2 @@
 # portfolio
-(Work in Progress) My computer programming portfolio
+My computer programming portfolio
