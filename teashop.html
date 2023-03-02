@@ -50,7 +50,7 @@
                 </li>
 
                 <li>
-                    <h1><a disabled="disabled" href="#">Sakha Nafees</a></h1>
+                    <h1><a disabled="disabled" href="#">Sakha</a></h1>
                 </li>
                 <li><a href="index.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
@@ -83,8 +83,9 @@
                         Premise: This is an Inventory/Order/Sales management application for
                         a (fictional) tea shop selling tea products and fresh tea to local customers.
                         I want to the application to match the relaxing feel of the shop for the staff.
+                        All data in this project is fictional.
                         <br />
-                        These are mockup designs I've made for just some of the pages on the site.
+                        These are mockup designs I've made for just some of the pages on the site:
                         <br /><br />
 
 
@@ -94,14 +95,16 @@
             </div>
             <img id="home" onclick="modalpopup(id, src, alt)" alt="Home User Page" src="images/teashop/home.png" />
             <img id="login" onclick="modalpopup(id, src, alt)" alt="Login Page" src="images/teashop/login.png" />
+            <img id="loading" onclick="modalpopup(id, src, alt)" alt="Loading Screen" src="images/teashop/loading.png" />
+            <img id="edit" onclick="modalpopup(id, src, alt)" alt="Edit Products/Menu Item Page" src="images/teashop/edit.png" />
             <img id="ptable" onclick="modalpopup(id, src, alt)" alt="Products Page (Table View)"
-                src="images/teashop/productstable.png" />
+                src="images/teashop/products_table.png" />
             <img id="pcard" onclick="modalpopup(id, src, alt)" alt="Products Page (Card View)"
-                src="images/teashop/productscard.png" />
+                src="images/teashop/products_card.png" />
             <img id="mtable" onclick="modalpopup(id, src, alt)" alt="Menu Page (Table View)"
-                src="images/teashop/menutable.png" />
+                src="images/teashop/menu_table.png" />
             <img id="mcard" onclick="modalpopup(id, src, alt)" alt="Menu Page (Card View)"
-                src="images/teashop/menucard.png" />
+                src="images/teashop/menu_card.png" />
 
         </div>
 
@@ -142,10 +145,14 @@
 
             </div>
             <!--PROGRESS ACCORDION-->
-            <span class="accordion">
-                <h3>Finished (0):</h2>
+            <span onclick="accordionShow(this)" class="accordion">
+                <h3>Finished (2):</h2>
             </span>
             <div class="panel">
+                <ul>
+                    <li>Products (CRUD)</li>
+                    <li>Menu (CRUD)</li>
+                </ul>
             </div>
 
             <span onclick="accordionShow(this)" class="accordion">
@@ -153,19 +160,17 @@
             </span>
             <div class="panel">
                 <ul>
-                    <li>Products (Index, CRUD)</li>
+                    <li>Inventory Management Functionality</li>
                 </ul>
             </div>
 
             <span onclick="accordionShow(this)" class="accordion">
-                <h3>To-Do (5):</h2>
+                <h3>To-Do (3):</h2>
             </span>
             <div class="panel">
                 <ul>
-                    <li>Ordering System (Index, CRUD)</li>
-                    <li>Menu (Index, CRUD)</li>
-                    <li>POS System (Index, CRUD)</li>
-                    <li>Suppliers (Index, CRUD)</li>
+                    <li>POS System</li>
+                    <li>Suppliers (CRUD)</li>
                     <li>User Login Functionality</li>
                 </ul>
             </div><br />
@@ -176,7 +181,7 @@
             <span class="greencheck">&checkmark;</span>
             next them.<br /><br />
 
-            <span onclick="accordionShow(this)" class="accordion">Card Mode toggle for Products/Menu Items</span>
+            <span onclick="accordionShow(this)" class="accordion">Card Mode toggle for Products/Menu Items<span class="greencheck">&checkmark;</span></span>
             <div class="panel">
                 <ul>
                     <li>This feature will allow the user to switch between 'table view' and 'card view' for the product
@@ -211,7 +216,7 @@
                         calcultor anywhere on the app for quick calculations if needed.</li>
                 </ul>
             </div>
-            <span onclick="accordionShow(this)" class="accordion">Cusom Keyboard Shortcuts</span>
+            <span onclick="accordionShow(this)" class="accordion">Custom Keyboard Shortcuts</span>
             <div class="panel">
                 <ul>
                     <li>This feature will allow the user to configure default or custom keyboard shortcuts for pages and
